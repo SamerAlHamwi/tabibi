@@ -1,4 +1,4 @@
-package com.tabibi.app
+package com.tabibi.tabibiapp
 
 import io.flutter.embedding.android.FlutterActivity
 
