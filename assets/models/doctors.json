@@ -1,0 +1,29 @@
+{
+  "num_doctors": 3,
+  "doctors": [
+    {
+      "id": 1,
+      "name": "moh",
+      "specialty": "أمراض قلب",
+      "profile_image": "https://example.com/images/doctor1.jpg",
+      "reviwes": 340,
+      "bio": "طبيب مختص في أمراض القلب مع خبرة تزيد عن 10 سنوات."
+    },
+    {
+      "id": 2,
+      "name": "sara",
+      "specialty": "طب أطفال",
+      "profile_image": "https://example.com/images/doctor2.jpg",
+      "reviwes": 210,
+      "bio": "أخصائية أطفال تهتم بصحة الأطفال منذ الولادة وحتى سن المراهقة."
+    },
+    {
+      "id": 3,
+      "name": "ahmad",
+      "specialty": "جراحة عامة",
+      "profile_image": "https://example.com/images/doctor3.jpg",
+      "reviwes": 175,
+      "bio": "جراح متمرس في العمليات العامة والطارئة."
+    }
+  ]
+}
