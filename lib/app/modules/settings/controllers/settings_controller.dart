@@ -139,14 +139,19 @@ class SettingsController extends GetxController {
   }
 
   void contactSupport() async {
-    final whatsappUrl =
-        Uri.parse("https://wa.me/963988343069"); // ← غيّر الرقم حسب الحاجة
-    if (await canLaunchUrl(whatsappUrl)) {
-      await launchUrl(whatsappUrl, mode: LaunchMode.externalApplication);
+    final String phone = "963988343069";
+    final Uri whatsappUri = Uri.parse("https://wa.me/$phone");
+
+    if (await canLaunchUrl(whatsappUri)) {
+      await launchUrl(
+        whatsappUri,
+        mode: LaunchMode.externalApplication, 
+      );
     } else {
       Get.snackbar('خطأ', 'لا يمكن فتح واتساب');
     }
   }
+
 
   Future<void> logOut() async {
     await manualCheck();

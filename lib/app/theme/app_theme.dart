@@ -11,9 +11,9 @@ class AppTheme {
     scaffoldBackgroundColor: AppColors.scaffoldBackground,
     fontFamily: 'Roboto',
 
-    colorScheme: const ColorScheme.light(
-      // primary: AppColors.primary,
-      // secondary: AppColors.secondary,
+    colorScheme: ColorScheme.light(
+      primary: AppColors.primary,
+      secondary: AppColors.secondary,
     ),
     appBarTheme: const AppBarTheme(
       systemOverlayStyle: SystemUiOverlayStyle(
@@ -35,6 +35,27 @@ class AppTheme {
       selectedItemColor: AppColors.primary,
       unselectedItemColor: AppColors.lightGray,
     ),
+    elevatedButtonTheme: ElevatedButtonThemeData(
+      style: ElevatedButton.styleFrom(
+        backgroundColor: AppColors.primary,
+        foregroundColor: Colors.white,
+        textStyle: const TextStyle(fontSize: 16),
+      ),
+    ),
+    textButtonTheme: TextButtonThemeData(
+      style: TextButton.styleFrom(
+        foregroundColor: AppColors.primary,
+      ),
+    ),
+    iconTheme: IconThemeData(
+      color: AppColors.primary,
+    ),
+    tabBarTheme: TabBarThemeData(
+      labelColor: AppColors.primary,
+      unselectedLabelColor: AppColors.black,
+      indicatorColor: AppColors.primary,
+    ),
+
   );
 
   static ThemeData get dark => ThemeData.dark().copyWith(
